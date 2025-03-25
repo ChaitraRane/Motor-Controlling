@@ -1,0 +1,56 @@
+# Hand Gesture Controlled Motor System
+
+## Overview
+This project allows users to control two motors using hand gestures detected by a webcam. The gestures are interpreted using OpenCV and CVZone, and the corresponding motor movements are executed through an Arduino connected via PyFirmata.
+
+## Features
+- Uses a webcam to detect hand gestures.
+- Controls two motors via an Arduino and an L298N motor driver.
+- Different gestures trigger specific motor actions (e.g., move forward, turn left/right, stop).
+
+## Hardware Requirements
+- Arduino board
+- L298N Motor Driver
+- 2 DC Motors
+- Webcam
+- Computer with Python installed
+
+## Software Requirements
+- Python 3.x
+- OpenCV (`cv2`)
+- CVZone (`cvzone`)
+- PyFirmata (`pyfirmata`)
+
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/Hand-Gesture-Motor-Control.git
+   cd Hand-Gesture-Motor-Control
+   ```
+2. Install dependencies:
+   ```sh
+   pip install opencv-python cvzone pyfirmata
+   ```
+3. Connect the Arduino and modify `controller.py` to match the correct COM port.
+
+## Usage
+1. Run the script:
+   ```sh
+   python main.py
+   ```
+2. Use the following hand gestures to control the motors:
+   - No fingers up: Stop both motors
+   - Index finger up: Turn right
+   - Index and middle finger up: Turn left
+   - Three fingers up: Move forward
+   - Four fingers up: Move backward
+   - All fingers up: Move at full speed
+3. Press 'k' to exit.
+
+## Files
+- `main.py`: Handles hand detection and gesture recognition.
+- `controller.py`: Controls the motor based on recognized gestures.
+
+## Acknowledgments
+Special thanks to OpenCV and CVZone for hand detection libraries and PyFirmata for Arduino communication.
+
