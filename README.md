@@ -36,3 +36,4 @@ This project uses OpenCV and Arduino to control a servo motor using hand gesture
 - Robotics and automation
 - Touchless control systems
 
+https://github.com/ChaitraRane/Motor-Controlling/blob/main/Servo%20Motor%20Controlling%20Video2.mp4
