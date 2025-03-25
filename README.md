@@ -33,7 +33,6 @@ This project uses OpenCV and Arduino to control a servo motor using hand gesture
 3. Place your hand in front of the webcam and control the servo using gestures.
 
 ## Applications
-- Assistive technology for people with disabilities
 - Robotics and automation
 - Touchless control systems
 
